@@ -1,24 +1,24 @@
 .border {
-    border: 1px solid red;
+    border: 2px solid rgb(12, 1, 1);
 }
 .borderBlue {
-    border: 1px solid blue;
+    border: 2px solid rgb(22, 212, 41);
 }
 .row1, .row2, .row3 {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .paddingRight {
-    padding-right: 10px;
+    padding-right: 100px;
 }
 .paddingLeft {
-    padding-left: 20px;
+    padding-left: 50px;
 }
 .paddingTop {
-    padding-top: 30px;
+    padding-top: 90px;
 }
 .paddingBottom {
-    padding-Bottom: 40px;
+    padding-Bottom: 100px;
 }
 .padding {
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
