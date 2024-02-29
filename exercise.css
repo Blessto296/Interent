@@ -9,7 +9,7 @@
     "five five six three seven"
     "five five six three seven"
     "five five six eight eight";
-    gap : 1em;
+    gap : 1em;  
 }
 .centerFlex {
     display: flex;
