@@ -3,19 +3,46 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
 }
+
 @media screen and (max-width: 700px) {
+    .option {
+        border: 2px solid red;
+        padding: 0.5em;
+        background-color: rgba(120, 7, 142, 0.485);
+    }
+
+
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+
 }
+
 @media screen and (max-width: 500px) {
+    .option {
+        border: 2px solid red;
+        padding: 0.5em;
+        background-color: rgb(103, 8, 106);
+    }
+
+
+
     .container {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+
+
+
+
 }
+
 .option {
     border: 2px solid red;
-    padding: 0.9em;
+    padding: 0.5em;
+    background-color: rgb(124, 10, 153);
+    border-radius: 10px;
 }
