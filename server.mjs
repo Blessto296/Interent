@@ -1,7 +1,8 @@
-import { createserver} from 'node:http';
+import { createServer} from 'node:http';
+//const { createServer} = require('node:http')
 const hostname='127.0.0.1';
 const port=3000;
-const server=createserver((req,res) => {
+const server=createServer((req,res) => {
     console.log('received request...',req.url, req.method);
 
     if(req.url=='/'){
@@ -19,6 +20,13 @@ const server=createserver((req,res) => {
             res.setHeader('Acess-control-allow-method',"POST , GET , OPTIONS");
             res.setHeader('Access-control-allow-headers','*');
         }
+        if (req.method == 'POST') {
+            console.log('post method...')
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'text/plain');
+            res.setHeader('Access-Control-Allow-Origin', "*");
 
+            res.end(JSON.stringify({surname: "Srinivas"}));
+        }
     }
 })
